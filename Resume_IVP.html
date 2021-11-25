@@ -1,0 +1,324 @@
+
+<!-- saved from url=(0101)file:///Users/satyap176/Desktop/NOTES/RESUME/Resume%20Latest/latest/Resume%20generator_Dated_1.1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Resume generator</title>
+	<link rel="stylesheet" type="text/css" href="./Resume_IVP_files/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/scroll.css"> -->
+	<link rel="stylesheet" type="text/css" href="./Resume_IVP_files/column_scroll.css">
+	<link rel="stylesheet" type="text/css" href="./Resume_IVP_files/thin_scroll.css">
+	<link rel="stylesheet" type="text/css" href="./Resume_IVP_files/theme.css">
+	<link rel="stylesheet" type="text/css" href="./Resume_IVP_files/main.css">
+	<link href="./Resume_IVP_files/css" rel="stylesheet" type="text/css">
+	<link href="./Resume_IVP_files/css(1)" rel="stylesheet" type="text/css">
+	<meta name="description" content="Online document editor like interface to create and save Resume">
+	<meta name="keywords" content="resume,cv,maker,creator,generator,iit,guwahati,iitg">
+</head>
+
+<body class="">
+
+<div class="container-fluid">
+
+	<div class="row">
+
+
+		<div class="col-sm-3 no-print" id="left">
+
+			<div id="panel">
+
+				<div id="notice">
+					<h4><i class="glyphicon glyphicon-exclamation-sign"></i> This link is outdated as of now.<br></h4>
+					<h4>Please use <a href="http://nitish6174.com/resume-generator/">nitish6174.com</a> till the updates are added to this link.</h4>
+				</div>
+
+				<button class="btn btn-block btn-primary" data-toggle="modal" data-target="#usageModal">VIEW INSTRUCTIONS</button>
+				<button class="btn btn-block btn-success" onclick="window.print()">PRINT AS PDF</button>
+
+				<hr>
+
+				<h3 class="text-center">Template settings</h3>
+				<button id="defaultTemplateBtn" class="btn btn-block btn-danger" onclick="template(&#39;default&#39;);">Use official IITG template</button>
+				<button id="customTemplateBtn" class="btn btn-block btn-default" onclick="template(&#39;custom&#39;);">Use custom template</button>
+				<h5>
+					Minor
+					<div class="toggle-button">
+						<div class="toggle-option" data-toggle="minor" id="minorShow">Show</div>
+						<div class="toggle-option selected" data-toggle="minor" id="minorHide">Hide</div>
+					</div>
+				</h5>
+				<h5>
+					Contact lines
+					<div class="toggle-button">
+						<div class="toggle-option" data-toggle="contact" id="contact3">3</div>
+						<div class="toggle-option selected" data-toggle="contact" id="contact4">4</div>
+						<div class="toggle-option" data-toggle="contact" id="contact5">5</div>
+					</div>
+				</h5>
+				<h5>
+					Horizontal margin
+					<div class="toggle-button">
+						<div class="toggle-option" data-toggle="margin" id="margin1">1</div>
+						<div class="toggle-option" data-toggle="margin" id="margin2">2</div>
+						<div class="toggle-option selected" data-toggle="margin" id="margin3">3</div>
+						<div class="toggle-option" data-toggle="margin" id="margin4">4</div>
+						<div class="toggle-option" data-toggle="margin" id="margin5">5</div>
+						<div class="toggle-option" data-toggle="margin" id="margin6">6</div>
+					</div>
+				</h5>
+				<h5>
+					Line spacing
+					<div class="toggle-button">
+						<div class="toggle-option" data-toggle="line" id="line1">1</div>
+						<div class="toggle-option selected" data-toggle="line" id="line2">2</div>
+						<div class="toggle-option" data-toggle="line" id="line3">3</div>
+						<div class="toggle-option" data-toggle="line" id="line4">4</div>
+						<div class="toggle-option" data-toggle="line" id="line5">5</div>
+						<div class="toggle-option" data-toggle="line" id="line6">6</div>
+					</div>
+				</h5>
+				<h5>
+					Center column no.
+					<div class="toggle-button">
+						<div class="toggle-option multi-select" data-toggle="column" id="column1">1</div>
+						<div class="toggle-option multi-select" data-toggle="column" id="column2">2</div>
+						<div class="toggle-option multi-select" data-toggle="column" id="column3">3</div>
+						<div class="toggle-option multi-select" data-toggle="column" id="column4">4</div>
+					</div>
+				</h5>
+				
+				<br>
+				
+				<div id="customTemplateOptions">
+					<h5>
+						Font type
+						<div class="toggle-button">
+							<div class="toggle-option" data-toggle="font" id="fontVerdanaSans">1</div>
+							<div class="toggle-option" data-toggle="font" id="fontVerdanaSerif">2</div>
+							<div class="toggle-option" data-toggle="font" id="fontRoboto">3</div>
+							<div class="toggle-option selected" data-toggle="font" id="fontDroid">4</div>
+						</div>
+					</h5>
+					<h5>
+						Title case
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="case" id="caseNormal">Default</div>
+							<div class="toggle-option" data-toggle="case" id="caseUpper">Uppercase</div>
+						</div>
+					</h5>
+					<h5>
+						Title style
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="title" id="titleRuled">Ruled</div>
+							<div class="toggle-option" data-toggle="title" id="titleShaded">Shaded</div>
+						</div>
+					</h5>
+					<h5>
+						Title rule position
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="rule" id="ruleAbove">Above title</div>
+							<div class="toggle-option" data-toggle="rule" id="ruleBelow">Below title</div>
+						</div>
+					</h5>
+					<br>
+					<h5>
+						Image
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="image" id="imageShow">Show</div>
+							<div class="toggle-option" data-toggle="image" id="imageHide">Hide</div>
+						</div>
+					</h5>
+					<h5>
+						Roll No
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="roll" id="rollShow">Show</div>
+							<div class="toggle-option" data-toggle="roll" id="rollHide">Hide</div>
+						</div>
+					</h5>
+					<h5>
+						Course
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="course" id="course1">1 line</div>
+							<div class="toggle-option" data-toggle="course" id="course2">2 lines</div>
+						</div>
+					</h5>
+					<h5>
+						Table border
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="table" id="tableShow">Show</div>
+							<div class="toggle-option" data-toggle="table" id="tableHide">Hide</div>
+						</div>
+					</h5>
+					<h5>
+						Education year column
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="edyear" id="edyearFirst">First</div>
+							<div class="toggle-option" data-toggle="edyear" id="edyearLat">Last</div>
+						</div>
+					</h5>
+					<h5>
+						Experience layout
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="experience" id="experience1">L1</div>
+							<div class="toggle-option" data-toggle="experience" id="experience2">L2</div>
+						</div>
+					</h5>
+					<h5>
+						Projects layout
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="projects" id="projects1">L1</div>
+							<div class="toggle-option" data-toggle="projects" id="projects2">L2</div>
+						</div>
+					</h5>
+					<br>
+				</div>
+
+				<h5>
+					<button class="btn btn-sm btn-block btn-primary" data-toggle="modal" data-target="#sectionToggleModal">Show/Hide sections</button>
+				</h5>
+
+				<hr>
+
+				<h3 class="text-center">Lists and points</h3>
+				<button class="btn btn-block btn-xs btn-success" onclick="insertList();">+ Insert sub-list</button>
+				<button class="btn btn-block btn-xs btn-warning" onclick="decreaseIndent();">&lt;&lt; Decrese indentation</button>
+				<button class="btn btn-block btn-xs btn-warning" onclick="increaseIndent();">&gt;&gt; Increase indentation</button>
+				<h5>
+					List style :
+					<div class="toggle-button">
+						<button class="btn btn-xs custom-button" onclick="changeListStyle(&#39;disc&#39;);">⚫</button>
+						<button class="btn btn-xs custom-button" onclick="changeListStyle(&#39;circle&#39;);">⚪</button>
+						<button class="btn btn-xs custom-button" onclick="changeListStyle(&#39;square&#39;);">■</button>
+						<button class="btn btn-xs custom-button" onclick="changeListStyle(&#39;dash&#39;);">-</button>
+						<button class="btn btn-xs custom-button" onclick="changeListStyle(&#39;decimal&#39;);">1.</button>
+						<button class="btn btn-xs custom-button" onclick="changeListStyle(&#39;upper-roman&#39;);">I.</button>
+						<button class="btn btn-xs custom-button" onclick="changeListStyle(&#39;lower-roman&#39;);">i.</button>
+						<button class="btn btn-xs custom-button" onclick="changeListStyle(&#39;upper-alpha&#39;);">A.</button>
+						<button class="btn btn-xs custom-button" onclick="changeListStyle(&#39;lower-alpha&#39;);">a.</button>
+					</div>
+				</h5>
+
+			</div>
+
+		</div>
+
+
+		<div class="col-sm-9 text-center" id="right">
+
+			<div id="page" class="droid" contenteditable="true" style="padding: 0.2cm 1.2cm 1cm; line-height: 1.2em;">
+
+				<div class="row" style="margin-bottom:10px;">
+				<div class="col-sm-12">
+					<div style="display: inline-block; margin-top: 25px;" id="image_box"><div class="row" style="margin-bottom: 10px;"><div class="col-sm-12" style="float: left; width: 725.434px;"><div id="info" style="margin-top: 0px; display: inline-block; margin-left: 20px;"><h2 id="contentName">Satya Prakash</h2><h5 id="contentCourse"><b>Software Engineer</b></h5></div><div id="contact" style="float: right; display: inline-block;">+91-8800508731<br>Satyap1766@gmail.com<br>https://github.com/Satyap176<br><span class="light" id="contactLink1" style="display: inline;">www.linkedin.com/in/Satyap176<br></span></div></div></div><div class="section" id="sectionEducation"><div class="section-title rule-above ruled"><hr class="hr-above"><h4><span style="font-weight: 700;">Education</span></h4><hr class="hr-below"></div><ul class="nobullet"><li style="margin-top: 6.54514px;"><table class="table customBordered" id="educationTable" style="width: 654.444px;"><tbody><tr><td class="header" style="line-height: 1.42857;"><span style="font-weight: 700;">Year</span></td><td class="header" style="line-height: 1.42857;"><span style="font-weight: 700;">Degree / Certificate</span></td><td class="header" style="line-height: 1.42857;"><span style="font-weight: 700;">Institute / Board</span></td><td class="header" style="line-height: 1.42857;"><span style="font-weight: 700;">Percentage</span></td></tr><tr><td class="" style="line-height: 1.42857;">2017-2020</td><td class="" style="line-height: 1.42857;">B.Tech</td><td class="" style="line-height: 1.42857;"><h5 id="contentCollege" style="color: rgb(51, 51, 51); text-size-adjust: auto;">Guru Gobind Singh Indraprastha University</h5></td><td class="" style="line-height: 1.42857;">76</td></tr><tr><td class="" style="line-height: 1.42857;">2017</td><td class="" style="line-height: 1.42857;">Diploma</td><td class="" style="line-height: 1.42857;">Board of Technical Education</td><td class="" style="line-height: 1.42857;">77</td></tr><tr><td class="" style="line-height: 1.42857;">2014</td><td class="" style="line-height: 1.42857;">Class X</td><td class="" style="line-height: 1.42857;">CBSE board</td><td class="" style="line-height: 1.42857;">78</td></tr></tbody></table></li></ul></div><div class="section" id="sectionExperience"><div class="section-title rule-above ruled"><hr class="hr-above"><h4><span style="font-weight: 700;">Experience&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></h4></div><ul class="decimal" style="padding-left: 25px;"><li style="margin-top: 6.54514px;"><div class="title">Associate Software Engineer at Indus valley Partners</div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-size: 18px;">[Aug-2021 - Current]</span><ul class="decimal" style="margin-left: 0px;"><li><span style="color: rgb(68, 68, 68); font-size: 13.5px;">Working in Treasury Product for US and UK Hedge Funds.</span></li><li><span style="color: rgb(68, 68, 68); font-size: 13.5px;">Tech used : C#, DotNet , NodeJs, SQL Server, REST, Oracle , SVN, BitBucket, SONAR, JIRA, Postman, Beyond Compare.</span></li></ul></li><li style="margin-top: 6.54514px;"><div><div class="title">Web Development Intern</div><span style="font-size: 18px; font-weight: 700;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 18px;">[Jun2019 - July2019]</span></div><div><div class="title"><ul class="decimal" style="margin-left: 0px; font-weight: normal;"><li><span style="color: rgb(68, 68, 68); font-size: 13.5px;">Contributed to whiteboard for PepCoding's Doubt resolution module built using Vanilla JavaScript, HTML &amp; CSS.&nbsp; &nbsp;</span></li><li><span style="color: rgb(68, 68, 68); font-size: 13.5px;">Created undo-redo features for the board using Array and Stack by Storing Positions, Colour and width of the pen&nbsp; &nbsp; &nbsp; &nbsp; &amp; Eraser.</span></li></ul></div></div></li><li style="margin-top: 6.54514px;"><div><div class="title">Instructor and Teaching Assistant</div><span style="font-size: 18px; font-weight: 700;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 18px;">[Aug2019 - Sept2020]</span></div><ul class="decimal"><li style="margin-top: 1.57812px;"><span style="color: rgb(68, 68, 68); font-size: 13.5px;">Took Java Foundation Batches: Related Coursework: Java Basics String , Arrays,&nbsp; Bit-Manipulation , TnS, Recursion, Dynamic Programming , Greedy, Generic Trees, Binary Trees, Linked List, Graph, HashMap, Heap, Searching &amp; Sorting , Stack and Queues.</span></li><li style="margin-top: 1.57812px;"><span style="color: rgb(68, 68, 68); font-size: 13.5px;">Two Batches have been completed so far : helped students gain an optimal understanding of coding starting from absolute zero.</span></li></ul></li></ul></div><div class="section" id="sectionProjects"><div class="section-title rule-above ruled"><hr class="hr-above"><h4><span style="font-weight: 700;">Projects</span></h4><hr class="hr-below"></div><ul><li style="margin-top: 6.54514px;"><div><b>RDBMS Index Implementation using B-Trees.</b><ul class="decimal" style="margin-left: 0px;"><li>Self Implemented Indexes of a mock RDBMS implementation using B-Trees to improve Query Performance.</li><li>With Index RDBMS query is Served via Page Scan and with Index Created with RDBMS Query is Served via Index Seek Leading to lesser number of Data Page loads from hard Disk and A Higher Performance.</li></ul></div></li><li style="margin-top: 6.54514px;"><div><div class="title">Automation</div><div class="time right"><br></div></div><div>Made Automated HackerRank automation script that adds a user as a moderator to all the challenges created by user using High-Level Node Library called Puppeteer. Used JS promises and async await to parallel execute the task.</div></li></ul></div><div class="section" id="sectionSkills"><div class="section-title rule-above ruled"><hr class="hr-above"><h4><span style="font-weight: 700;">Technical skills</span></h4><hr class="hr-below"></div><ul><li style="margin-top: 3.26389px;"><span style="font-weight: 700;"><span class="skillCategory">Programming languages</span>&nbsp;:</span>&nbsp;Java, C++, Python, C#, JavaScript</li><li style="margin-top: 3.26389px;"><span style="font-weight: 700;"><span class="skillCategory">Web technologies</span>&nbsp;:</span>&nbsp;HTML5, CSS3, Javascript, Node, Express, Selenium, Chrome-WebDriver, Puppeteer, JQuery, BootStrap.</li><li style="margin-top: 3.26389px;"><b>BRM Tools :</b> Customer Centre, Pricing Centre.</li><li style="margin-top: 3.26389px;"><b>Version Control : </b>Git, Clear Case, BitBucket.</li><li style="margin-top: 3.26389px;"><span style="font-weight: 700;"><span class="skillCategory">Database management</span>&nbsp;:</span>&nbsp;SQL, MongoDB, Oracle.</li><li style="margin-top: 3.26389px;"><span style="font-weight: 700;"><span class="skillCategory">Operating system</span>&nbsp;:</span>&nbsp;Windows, Mac, Linux</li></ul></div><div class="section" id="sectionAchievements"><div class="section-title rule-above ruled"><hr class="hr-above"><h4><span style="font-weight: 700;">Achievements</span></h4><hr class="hr-below"></div><ul><li style="margin-top: 6.54514px;">Solved over <b>1000+</b> Questions based on Data Structures &amp; Algorithms across GeeksforGeeks, LeetCode, HackerRank and PepCoding Website</li><li style="margin-top: 6.54514px;">Rewarded with TAship in PepCoding and Provided backup Classes and HandMade notes on Various topics such as Recursion, Graphs, Dp, LinkedList, Stack &amp; Queues, HashMap, Heap, Trees, Searching and Sorting.</li><li style="margin-top: 6.54514px;">Won the first position in brocode event that took place in the cultural fest of Amity ‘Avensis‘ with 2 team members.</li></ul></div></div></div></div><div class="section" id="sectionCurricular"><ul>
+					</ul>
+				</div>
+
+				
+				<div class="section" id="sectionInterest">
+					<div class="section-title ruled rule-above">
+						<hr class="hr-above">
+						<h4><strong>Fields of interest (OR Research interests)</strong></h4>
+						<hr class="hr-below">
+					</div>
+					<ul>
+					<div class="row">
+						<div class="col-sm-6">
+							<li>Advanced XYZ</li>
+							<li>ABC design</li>
+						</div>
+						<div class="col-sm-6">
+							<li>XYZ processing</li>
+							<li>Robotics</li>
+						</div>
+					</div>
+					</ul>
+				</div>
+				
+				<div class="section" id="sectionFooterMessage">
+					<div class="section-title ruled rule-above">
+						<hr class="hr-above">
+						<h6><strong>(References available on request)</strong></h6>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+
+	</div>
+
+</div>
+
+
+<div class="modal fade" id="usageModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h5><strong>Note : </strong>Use <strong>Google Chrome</strong>. Other browsers are unable to print properly and don't support some features.</h5>
+				<h4><strong>Editing content</strong></h4>
+				<ul>
+					<li>Edit the Resume content just like a normal document editor (cut,copy,undo etc).</li>
+					<li>Entire sections can be added, reordered, removed just by cut,copy,pasting method. (Use "show/hide sections" button to hide but retain content)</li>
+					<li>To remove a section/point/mentor/link etc, just delete it.</li>
+					<li>For styled/formatted text, select the text portion and press <kbd>Ctrl+b</kbd> for bold, <kbd>Ctrl+i</kbd> for italics, <kbd>Ctrl+u</kbd> for underlined text.</li>
+					<li>Use "Insert sub-list" button to insert sub-points in a point. (like as in achivements section)</li>
+					<li>Change indentation and bullet style of the list where your cursor is placed.</li>
+				</ul>
+				<h4><strong>Editing template</strong></h4>
+				<ul>
+					<li>Use the options in the left panel to modify the template/look.</li>
+					<li>In case you want to use a different template than the official IITG template, choose the corresponding button to see other setting options. (For on-campus purpose, you must use official IITG template)</li>
+				</ul>
+				<h4><strong>Saving</strong></h4>
+				<ul>
+					<li>Close any popup box (like this instructions popup	) if opened. Press <kbd>Ctrl+s</kbd></li>
+					<li>This will save the webpage (a .html file and a folder will be saved. Keep them together)</li>
+					<li>Open the .html file in browser from your PC.</li>
+					<li>This way, you can maintain multiple saved copies for each profile/template on your PC.</li>
+				</ul>
+				<h4><strong>Print as PDF</strong></h4>
+				<ul>
+					<li>Adjust margin in the Chrome's print dialog box. You may need it if a section is getting split between two pages. Print each page separately with different margins if needed.</li>
+					<li>If URLs or some stray text is being shown in print preview, disable the options "Include headers and footers","Include background graphics" etc in the print dialog box.</li>
+				</ul>
+				<h4><strong>Merge and compress PDFs</strong></h4>
+				<ul>
+					<li>If you can run python file on your machine, use the script provided on <a class="blue" target="_blank" href="https://github.com/nitish6174/resume-generator">project's github</a></li>
+					<li><a class="blue" target="_blank" href="http://www.pdfmerge.com/">pdfmerge.com/</a> is one of the best sites available for this task.</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="sectionToggleModal" tabindex="-1" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionEducation">Education</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionExperience">Experience</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionPublications">Publications</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionProjects">Projects</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionSkills">Technical Skills</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionResponsibility">Positions of Responsibility</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionAchievements">Achievements</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCourses">Key courses taken</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCurricular">Extra curriculars</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" value="sectionFooterMessage">References message</label></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="./Resume_IVP_files/jquery.min.js"></script>
+<script type="text/javascript" src="./Resume_IVP_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./Resume_IVP_files/main.js"></script>
+
+
+
+</body></html>
